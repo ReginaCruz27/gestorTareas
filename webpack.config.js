@@ -1,5 +1,7 @@
 const path = require('path');
+
 module.exports = {
+    mode: 'development',
     entry:'./src/index.js', //Punto de entrada de la aplicación
     output: {
         filename: 'bundle.js', //Nombre del archivo de salida
@@ -8,8 +10,8 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.css$/,
-                use: ['style-loader', 'css-loader'],
+                test: /\.css$/, // Regex para identificar archivos CSS
+                use: ['style-loader', 'css-loader'], // Loaders para procesar archivos
             },
             {
                 test: /\.js$/,
@@ -23,10 +25,12 @@ module.exports = {
             },
         ],
     },
-devtool: 'source-map',
+devtool: 'source-map', // Generar source maps para facilitar la depuración
 devServer: {
-    contentBase: path.resolve(__dirname, 'dist'),
-    compress: true,
-    port: 9000,
+    static: {
+      directory: path.resolve(__dirname,'dist'),
+    },
+    compress: true, // Hablitar compresión gzip
+    port: 9000, // Puerto del servidor de desarrollo
 },
 };
