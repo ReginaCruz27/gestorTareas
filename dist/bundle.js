@@ -101,10 +101,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__);
 // Imports
 
 
+
+var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../../../../../imagenes/fondo.jpg */ "./imagenes/fondo.jpg"), __webpack_require__.b);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, `/* Estilos generales*/
 body {
@@ -120,7 +125,7 @@ body {
 
 /* Estilos para el contenedor principal */
 #app {
-    background-color: white;
+    background-color: rgb(129, 248, 234);
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -137,15 +142,15 @@ input {
     width: 75%;
     padding: 8px;
     margin-right: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid #070101;
     border-radius: 3px;
 }
 
 /* Estilos al botón */
 button {
     padding: 5px 8px;
-    background-color: #007bff;
-    color: white;
+    background-color: #f6659a;
+    color: rgb(248, 240, 240);
     border: none;
     border-radius: 3px;
     cursor: pointer;
@@ -159,9 +164,9 @@ ul {
 
 /* Estilos a los elementos de la lista */
 li {
-    background-color: #f4f4f4;
+    background-color: #f9fcfc;
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid #dddddd;
     margin-top: 10px;
     display: flex;
     justify-content: space-between;
@@ -172,7 +177,21 @@ li {
 li.completed {
     text-decoration: line-through;
     color: #888;
-}`, "",{"version":3,"sources":["webpack://./src/styles.css"],"names":[],"mappings":"AAAA,qBAAqB;AACrB;IACI,8BAA8B;IAC9B,yBAAyB;IACzB,SAAS;IACT,UAAU;IACV,aAAa;IACb,aAAa;IACb,uBAAuB;IACvB,mBAAmB;AACvB;;AAEA,yCAAyC;AACzC;IACI,uBAAuB;IACvB,aAAa;IACb,kBAAkB;IAClB,uCAAuC;AAC3C;;AAEA,+BAA+B;AAC/B;IACI,aAAa;IACb,8BAA8B;AAClC;;AAEA,qBAAqB;AACrB;IACI,UAAU;IACV,YAAY;IACZ,kBAAkB;IAClB,sBAAsB;IACtB,kBAAkB;AACtB;;AAEA,qBAAqB;AACrB;IACI,gBAAgB;IAChB,yBAAyB;IACzB,YAAY;IACZ,YAAY;IACZ,kBAAkB;IAClB,eAAe;AACnB;;AAEA,wBAAwB;AACxB;IACI,gBAAgB;IAChB,UAAU;AACd;;AAEA,wCAAwC;AACxC;IACI,yBAAyB;IACzB,aAAa;IACb,sBAAsB;IACtB,gBAAgB;IAChB,aAAa;IACb,8BAA8B;IAC9B,mBAAmB;AACvB;;AAEA,+CAA+C;AAC/C;IACI,6BAA6B;IAC7B,WAAW;AACf","sourcesContent":["/* Estilos generales*/\nbody {\n    font-family: arial, sans-serif;\n    background-color: #f4f4f4;\n    margin: 0;\n    padding: 0;\n    height: 100vh;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n}\n\n/* Estilos para el contenedor principal */\n#app {\n    background-color: white;\n    padding: 20px;\n    border-radius: 5px;\n    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);\n}\n\n/* Estilos para el formulario */\nform {\n    display: flex;\n    justify-content: space-between;\n}\n\n/* Estilos al input */\ninput {\n    width: 75%;\n    padding: 8px;\n    margin-right: 10px;\n    border: 1px solid #ddd;\n    border-radius: 3px;\n}\n\n/* Estilos al botón */\nbutton {\n    padding: 5px 8px;\n    background-color: #007bff;\n    color: white;\n    border: none;\n    border-radius: 3px;\n    cursor: pointer;\n}\n\n/* Estilos de la lista */\nul {\n    list-style: none;\n    padding: 0;\n}\n\n/* Estilos a los elementos de la lista */\nli {\n    background-color: #f4f4f4;\n    padding: 10px;\n    border: 1px solid #ddd;\n    margin-top: 10px;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n}\n\n/* Estilos para cuando una tarea está completa*/\nli.completed {\n    text-decoration: line-through;\n    color: #888;\n}"],"sourceRoot":""}]);
+}
+
+body {
+    background-color: rgb(246, 230, 233);
+    background-image: url(${___CSS_LOADER_URL_REPLACEMENT_0___});
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+}
+`, "",{"version":3,"sources":["webpack://./src/styles.css"],"names":[],"mappings":"AAAA,qBAAqB;AACrB;IACI,8BAA8B;IAC9B,yBAAyB;IACzB,SAAS;IACT,UAAU;IACV,aAAa;IACb,aAAa;IACb,uBAAuB;IACvB,mBAAmB;AACvB;;AAEA,yCAAyC;AACzC;IACI,oCAAoC;IACpC,aAAa;IACb,kBAAkB;IAClB,uCAAuC;AAC3C;;AAEA,+BAA+B;AAC/B;IACI,aAAa;IACb,8BAA8B;AAClC;;AAEA,qBAAqB;AACrB;IACI,UAAU;IACV,YAAY;IACZ,kBAAkB;IAClB,yBAAyB;IACzB,kBAAkB;AACtB;;AAEA,qBAAqB;AACrB;IACI,gBAAgB;IAChB,yBAAyB;IACzB,yBAAyB;IACzB,YAAY;IACZ,kBAAkB;IAClB,eAAe;AACnB;;AAEA,wBAAwB;AACxB;IACI,gBAAgB;IAChB,UAAU;AACd;;AAEA,wCAAwC;AACxC;IACI,yBAAyB;IACzB,aAAa;IACb,yBAAyB;IACzB,gBAAgB;IAChB,aAAa;IACb,8BAA8B;IAC9B,mBAAmB;AACvB;;AAEA,+CAA+C;AAC/C;IACI,6BAA6B;IAC7B,WAAW;AACf;;AAEA;IACI,oCAAoC;IACpC,yDAA4C;IAC5C,sBAAsB;IACtB,SAAS;IACT,UAAU;IACV,aAAa;IACb,aAAa;IACb,uBAAuB;IACvB,mBAAmB;;AAEvB","sourcesContent":["/* Estilos generales*/\nbody {\n    font-family: arial, sans-serif;\n    background-color: #f4f4f4;\n    margin: 0;\n    padding: 0;\n    height: 100vh;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n}\n\n/* Estilos para el contenedor principal */\n#app {\n    background-color: rgb(129, 248, 234);\n    padding: 20px;\n    border-radius: 5px;\n    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);\n}\n\n/* Estilos para el formulario */\nform {\n    display: flex;\n    justify-content: space-between;\n}\n\n/* Estilos al input */\ninput {\n    width: 75%;\n    padding: 8px;\n    margin-right: 10px;\n    border: 1px solid #070101;\n    border-radius: 3px;\n}\n\n/* Estilos al botón */\nbutton {\n    padding: 5px 8px;\n    background-color: #f6659a;\n    color: rgb(248, 240, 240);\n    border: none;\n    border-radius: 3px;\n    cursor: pointer;\n}\n\n/* Estilos de la lista */\nul {\n    list-style: none;\n    padding: 0;\n}\n\n/* Estilos a los elementos de la lista */\nli {\n    background-color: #f9fcfc;\n    padding: 10px;\n    border: 1px solid #dddddd;\n    margin-top: 10px;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n}\n\n/* Estilos para cuando una tarea está completa*/\nli.completed {\n    text-decoration: line-through;\n    color: #888;\n}\n\nbody {\n    background-color: rgb(246, 230, 233);\n    background-image: url('/imagenes/fondo.jpg');\n    background-size: cover;\n    margin: 0;\n    padding: 0;\n    display: flex;\n    height: 100vh;\n    justify-content: center;\n    align-items: center;\n\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -269,6 +288,41 @@ module.exports = function (cssWithMappingToString) {
     }
   };
   return list;
+};
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/runtime/getUrl.js":
+/*!********************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/getUrl.js ***!
+  \********************************************************/
+/***/ ((module) => {
+
+
+
+module.exports = function (url, options) {
+  if (!options) {
+    options = {};
+  }
+  if (!url) {
+    return url;
+  }
+  url = String(url.__esModule ? url.default : url);
+
+  // If url is already wrapped in quotes, remove them
+  if (/^['"].*['"]$/.test(url)) {
+    url = url.slice(1, -1);
+  }
+  if (options.hash) {
+    url += options.hash;
+  }
+
+  // Should url be wrapped?
+  // See https://drafts.csswg.org/css-values-3/#urls
+  if (/["'() \t\n]|(%20)/.test(url) || options.needQuotes) {
+    return "\"".concat(url.replace(/"/g, '\\"').replace(/\n/g, "\\n"), "\"");
+  }
+  return url;
 };
 
 /***/ }),
@@ -615,6 +669,16 @@ function styleTagTransform(css, styleElement) {
 }
 module.exports = styleTagTransform;
 
+/***/ }),
+
+/***/ "./imagenes/fondo.jpg":
+/*!****************************!*\
+  !*** ./imagenes/fondo.jpg ***!
+  \****************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "1d8f04d3a2df5585fdff.jpg";
+
 /***/ })
 
 /******/ 	});
@@ -643,6 +707,9 @@ module.exports = styleTagTransform;
 /******/ 		return module.exports;
 /******/ 	}
 /******/ 	
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = __webpack_modules__;
+/******/ 	
 /************************************************************************/
 /******/ 	/* webpack/runtime/compat get default export */
 /******/ 	(() => {
@@ -668,6 +735,18 @@ module.exports = styleTagTransform;
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -682,6 +761,55 @@ module.exports = styleTagTransform;
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src;
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) {
+/******/ 					var i = scripts.length - 1;
+/******/ 					while (i > -1 && (!scriptUrl || !/^http(s?):/.test(scriptUrl))) scriptUrl = scripts[i--].src;
+/******/ 				}
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/jsonp chunk loading */
+/******/ 	(() => {
+/******/ 		__webpack_require__.b = document.baseURI || self.location.href;
+/******/ 		
+/******/ 		// object to store loaded and loading chunks
+/******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
+/******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
+/******/ 		var installedChunks = {
+/******/ 			"main": 0
+/******/ 		};
+/******/ 		
+/******/ 		// no chunk on demand loading
+/******/ 		
+/******/ 		// no prefetching
+/******/ 		
+/******/ 		// no preloaded
+/******/ 		
+/******/ 		// no HMR
+/******/ 		
+/******/ 		// no HMR manifest
+/******/ 		
+/******/ 		// no on chunks loaded
+/******/ 		
+/******/ 		// no jsonp function
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/nonce */

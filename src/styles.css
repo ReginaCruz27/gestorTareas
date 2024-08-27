@@ -12,7 +12,7 @@ body {
 
 /* Estilos para el contenedor principal */
 #app {
-    background-color: white;
+    background-color: rgb(129, 248, 234);
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -29,15 +29,15 @@ input {
     width: 75%;
     padding: 8px;
     margin-right: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid #070101;
     border-radius: 3px;
 }
 
 /* Estilos al botón */
 button {
     padding: 5px 8px;
-    background-color: #007bff;
-    color: white;
+    background-color: #f6659a;
+    color: rgb(248, 240, 240);
     border: none;
     border-radius: 3px;
     cursor: pointer;
@@ -51,9 +51,9 @@ ul {
 
 /* Estilos a los elementos de la lista */
 li {
-    background-color: #f4f4f4;
+    background-color: #f9fcfc;
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid #dddddd;
     margin-top: 10px;
     display: flex;
     justify-content: space-between;
@@ -64,4 +64,17 @@ li {
 li.completed {
     text-decoration: line-through;
     color: #888;
+}
+
+body {
+    background-color: rgb(246, 230, 233);
+    background-image: url('/imagenes/fondo.jpg');
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
 }
